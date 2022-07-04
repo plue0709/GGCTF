@@ -15,9 +15,10 @@ Mở file dump.zip bằng HxD, xem một lượt thì tìm thấy rất nhiều 
 
 Sẽ lấy từ file dump.zip ra 18 file flag.zip và 1 trong 18 file đó sẽ chứa flag
 Nhưng không sau khi thử rất nhiều lần tách ghép dựa theo cấu trúc file zip thì vẫn bị lỗi
+
 ![image](https://user-images.githubusercontent.com/80806913/177127335-62850ad5-fad0-4b4b-8ef2-7d59d7ac0cfc.png)
 
-Cấu trúc file zip
+Tài liệu về cấu trúc file zip
 
 ![unknown](https://user-images.githubusercontent.com/80806913/177125981-5d0f51d2-56fb-4bb7-ae52-3dc774a24d20.png)
 
