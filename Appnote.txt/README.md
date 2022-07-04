@@ -26,13 +26,16 @@ Tài liệu về cấu trúc file zip
 >Quay lại xem cấu trúc file dump.zip
 
 Kiểm tra 4 bytes bắt đầu(**50 4b 03 04**) của file dump.zip nhận được 686 kết quả
+
 Kiểm tra 4 bytes giữa (**50 4b 01 02**)của file cũng nhận được 686 kết quả
+
 Nhưng kiểm tra 4 bytes cuối(**50 4b 05 06**) thì chỉ nhận được 21 kết quả
 ![image](https://user-images.githubusercontent.com/80806913/177128356-25c87d11-7bec-466f-95a4-c7e81c1b0137.png)
 
 Ở phần **END OF CENTRAL DIRECTORY** có các bytes chứa offset bắt đầu của **central directory** 
 ví dụ như **50 4B 05 06 00 00 00 00 01 00 01 00 5A E4 00 00 88 0A 00 00 A2 01** thì **0A 88** là offset bắt đầu, có 21 vị trí offset như thế, mình thử tìm với một
 vài offset đầu thì thấy chữ cái đi kèm với signature của file mình nói ở đầu tạo ra CTF{
+
 ![image](https://user-images.githubusercontent.com/80806913/177129513-04aecc81-6ff5-499f-ab42-e9435a5a1c95.png)
 ![image](https://user-images.githubusercontent.com/80806913/177129597-c51726f0-f5ad-433b-aed2-b505f6582ca7.png)
 ![image](https://user-images.githubusercontent.com/80806913/177129659-804fcf41-f6f1-4af4-a081-90fff880b33e.png)
