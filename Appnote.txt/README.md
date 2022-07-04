@@ -9,12 +9,11 @@ Có vẻ file txt không thể khai thác được gì, chỉ còn lại file **
 
 ![image](https://user-images.githubusercontent.com/80806913/177125537-6c130cfd-4866-4519-b184-5e4295346f60.png)
 
-Mở file dump.zip bằng HxD, xem một lượt thì tìm thấy rất nhiều signature của file zip(**50 4B 03 04**), và đi kèm với đó mỗi signature là **flag** + số + một chữ cái 
-trong bảng chữ cái như hình trên, nếu lọc ra thì sẽ nhận được 19 lần chuỗi: **abcdefghijklmnopqrstuvwxyzCTF{0137}_**
+Mở file dump.zip bằng HxD, xem một lượt thì tìm thấy rất nhiều signature của file zip(**50 4B 03 04**), và đi kèm với đó mỗi signature là **flag** + số + một chữ cái trong bảng chữ cái như hình trên, nếu lọc ra thì sẽ nhận được 19 lần chuỗi: **abcdefghijklmnopqrstuvwxyzCTF{0137}_**
 
 > Hình dung ban đầu hướng giải quyết
+
 Sẽ lấy từ file dump.zip ra 18 file flag.zip và 1 trong 18 file đó sẽ chứa flag
-![image](https://user-images.githubusercontent.com/80806913/177127198-b8a78ece-275d-49ac-9e0a-ef77e2e69143.png)
 Nhưng không sau khi thử rất nhiều lần tách ghép dựa theo cấu trúc file zip thì vẫn bị lỗi
 ![image](https://user-images.githubusercontent.com/80806913/177127335-62850ad5-fad0-4b4b-8ef2-7d59d7ac0cfc.png)
 
