@@ -38,8 +38,7 @@ Có thể giải thích có 686 kết quả = 36x19 + 2, 36 là 36 ký tự  **a
 
 Ở phần **END OF CENTRAL DIRECTORY** có các bytes chứa offset bắt đầu của **central directory**
 
-Ví dụ như **50 4B 05 06 00 00 00 00 01 00 01 00 5A E4 00 00 88 0A 00 00 A2 01** thì **0A 88** là offset bắt đầu, có 21 vị trí offset như thế, mình thử tìm với một
-vài offset đầu thì thấy chữ cái đi kèm với signature của file mình nói ở đầu tạo ra CTF{
+Ví dụ như **50 4B 05 06 00 00 00 00 01 00 01 00 5A E4 00 00 88 0A 00 00 A2 01** thì **0A 88** là offset bắt đầu (little endian), có 21 vị trí offset như thế, mình thử tìm với một vài offset đầu thì thấy chữ cái đi kèm với signature của file mình nói ở đầu tạo ra CTF{
 
 ![image](https://user-images.githubusercontent.com/80806913/177129513-04aecc81-6ff5-499f-ab42-e9435a5a1c95.png)
 ![image](https://user-images.githubusercontent.com/80806913/177129597-c51726f0-f5ad-433b-aed2-b505f6582ca7.png)
